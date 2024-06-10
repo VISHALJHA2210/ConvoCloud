@@ -14,7 +14,7 @@ export const Auth = (props) => {
         cookies.set("auth-token", result.user.refreshToken);
         setIsAuth(true);
       }
-      catch(error){
+      catch(err){
         console.error(err);
       }
     }
